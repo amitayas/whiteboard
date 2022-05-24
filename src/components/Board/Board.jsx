@@ -2,7 +2,7 @@ import './Board.css'
 import { useRef } from 'react'
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { useLayoutEffect } from 'react';
+// import { useLayoutEffect } from 'react';
 
 export const Board = () => {
  
@@ -21,7 +21,7 @@ export const Board = () => {
 
     useEffect(() => {
         const canvas = document.getElementById('board');
-        const ctx = canvas.getContext('2d');
+        // const ctx = canvas.getContext('2d');
         canvas.height = window.innerHeight;
         canvas.width = window.innerWidth;
         console.log("Hello");
