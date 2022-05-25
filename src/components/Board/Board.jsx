@@ -24,7 +24,7 @@ export const Board = () => {
 
     useEffect(() => {
         const canvas = document.getElementById('board');
-        const ctx = canvas.getContext('2d');
+        // const ctx = canvas.getContext('2d');
         canvas.height = window.innerHeight;
         canvas.width = window.innerWidth;
         console.log("Hello");
