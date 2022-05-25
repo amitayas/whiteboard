@@ -1,6 +1,29 @@
+.board-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: max-content; */
+}
+
 #board{
     /* border: 0.5rem; */
+    /* margin: 1rem; */
     border-style: solid;
-    height: auto;
-    /* background-color: red; */
+    /* height: 100%;  */
+    /* height: auto;
+    width: auto;  */
+    /* width: 10rem; */
+    background-color: wheat;
+}
+
+#color-picker{
+    width: 20%;
+    border-style: solid;
+    border-width: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 7rem;
+    align-items: center;
+    background-color: #78CCCB;
 }
