@@ -14,7 +14,7 @@ export const Board = () => {
             const board = boardRef.current;
             const rect = board.getBoundingClientRect();
             const ctx = board.getContext('2d');
-            ctx.lineWidth = 1;
+            ctx.lineWidth = 5;
             ctx.lineCap = "round";
             ctx.lineTo(e.clientX - rect.left, e.clientY-rect.top);
             ctx.strokeStyle = strokeColor;
