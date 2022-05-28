@@ -22,6 +22,20 @@ export const Board = () => {
         }
     };
 
+    // const startDrawing = () => {
+    //     changeDrawing(true);
+    // }
+
+    // const stopDrawing = () => {
+    //     changeDrawing();
+    //     boardRef.current.getContext('2d').beginPath();
+    // }
+
+    const clear = () => {
+        const canvas = boardRef.current;
+        canvas.getContext('2d').clearRect(0,0, canvas.width, canvas.height);
+    }
+    
     useEffect(() => {
         const canvas = document.getElementById('board');
         // const ctx = canvas.getContext('2d');
@@ -36,8 +50,9 @@ export const Board = () => {
                 <div className="color red" onClick={()=>{changeStrokeColor('red')}}>🟥</div>
                 <div className="color blue" onClick={()=>{changeStrokeColor('blue')}}>🟦</div>
                 <div className="color green" onClick={()=>{changeStrokeColor('green')}}>🟩</div>
+                <button id='clearButton' onClick={clear}>Clear</button>
             </div>
-            <canvas id='board' ref={boardRef} onMouseDown={() => {changeDrawing(true)}} onMouseUp={()=>{changeDrawing(false); boardRef.current.getContext('2d').beginPath()}} onMouseMove={draw}></canvas>
+            <canvas id='board' ref={boardRef} onMouseDown={() => {changeDrawing(true)}}  onMouseUp={()=>{changeDrawing(false); boardRef.current.getContext('2d').beginPath()}} onMouseMove={draw}></canvas> 
         </div>
     );
 }

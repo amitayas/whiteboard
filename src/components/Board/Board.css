@@ -6,13 +6,7 @@
 }
 
 #board{
-    /* border: 0.5rem; */
-    /* margin: 1rem; */
     border-style: solid;
-    /* height: 100%;  */
-    /* height: auto;
-    width: auto;  */
-    /* width: 10rem; */
     background-color: wheat;
 }
 
@@ -26,4 +20,16 @@
     font-size: 7rem;
     align-items: center;
     background-color: #78CCCB;
+}
+
+.color:hover{
+    background-color: gray;
+    /* padding: 2rem; */
+}
+
+#clearButton{
+    font-size: 3rem;
+    margin: 0.6rem;
+    background-color: coral;
+    font-weight: bold;
 }
